@@ -1,6 +1,8 @@
 # Component Collection
 
-This project is a collection of reusable React components, bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a collection of reusable React components, bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and styled with Tailwind CSS.
+
+It is a collection of Buttons, Dropdowns, Nav-Bars and Accordions.  
 
 ## Available Scripts
 
