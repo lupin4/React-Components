@@ -34,17 +34,17 @@ function ButtonPage() {
           onMouseEnter={handleHover}
           onClick={handleClick}
         >
-          <GoDatabase /> no, really click me
+          <GoDatabase />really, click me
         </Button>
       </div>
       <div>
         <Button warning onMouseEnter={handleHover} onClick={handleClick}>
-          <GoDatabase /> no, you absolutely must click me
+          <GoDatabase />absolutely must click me
         </Button>
       </div>
       <div>
         <Button success onMouseEnter={handleHover} onClick={handleClick}>
-          <GoDatabase />you really should click me
+          <GoDatabase />really should click me
         </Button>
       </div>
       <div>
