@@ -1,8 +1,4 @@
 import className from "classnames";
-import { twMerge } from "tailwind-merge";
-
-
-
 
 function Button({
   children,
@@ -15,27 +11,25 @@ function Button({
   rounded,
   ...rest
 }) {
-  
-  const classes = twMerge(
-    className(
+  const classes = className(
     rest.className,
-    "flex items-center gap-2 px-3 py-1.5 border",
+    "flex items-center px-3 py-1.5 border",
     {
-      "border-blue-500 bg-blue-500 text-white": primary,
-      "border-gray-900 bg-gray-900 text-white": secondary,
-      "border-green-500 bg-green-500 text-white": success,
-      "border-yellow-400 bg-yellow-400 text-white": warning,
-      "border-red-500 bg-red-500 text-white": danger,
+      "border-blue-500 bg-blue-500": primary,
+      "border-gray-900 bg-gray-900": secondary,
+      "border-green-500 bg-green-500": success,
+      "border-yellow-400 bg-yellow-400": warning,
+      "border-red-500 bg-red-500": danger,
       "rounded-full": rounded,
-      "bg-white border-4 m-2 p-4" : outline,
-      "text-white m-2 p-4": !outline,
-      "text-blue-900 !important": outline && primary,
-      "text-gray-900 !important": outline && secondary,
-      "text-green-900 !important": outline && success,
-      "text-yellow-900 !important": outline && warning,
-      "text-red-500 !important": outline && danger,
+      "bg-white": outline,
+      "text-white": !outline,
+      "text-blue-500": outline && primary,
+      "text-gray-900": outline && secondary,
+      "text-green-500": outline && success,
+      "text-yellow-400": outline && warning,
+      "text-red-500": outline && danger,
     }
-  ));
+  );
 
   return (
     <button {...rest} className={classes}>

@@ -1,4 +1,4 @@
-import Button from "./components/Button";
+import Button from "../components/Button";
 import { GoBell, GoCloudDownload, GoDatabase } from "react-icons/go";
 // import {Button} from "./components/button.jsx"
 
@@ -44,7 +44,7 @@ function ButtonPage() {
       </div>
       <div>
         <Button success onMouseEnter={handleHover} onClick={handleClick}>
-          <GoDatabase /> no, you should must click me
+          <GoDatabase />you really should click me
         </Button>
       </div>
       <div>
@@ -54,7 +54,7 @@ function ButtonPage() {
           onMouseEnter={handleHover}
           onClick={handleClick}
         >
-          <GoDatabase /> no, you absolutely must click me
+          <GoDatabase /> please click me
         </Button>
       </div>
       <div>
@@ -64,7 +64,7 @@ function ButtonPage() {
           onMouseEnter={handleHover}
           onClick={handleClick}
         >
-          <GoDatabase /> no, you absolutely must click me
+          <GoDatabase /> I have a database
         </Button>
       </div>
     </div>

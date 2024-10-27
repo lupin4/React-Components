@@ -4,7 +4,7 @@ import Dropdown from "../components/Dropdown";
 function DropdownPage() {
   const [selection, setSelection] = useState(null);
 
-  const handleSelection = (option) => {
+  const handleSelect = (option) => {
     setSelection(option);
   };
 
@@ -16,21 +16,7 @@ function DropdownPage() {
 
   return (
     <div className="flex">
-      <Dropdown
-        options={options}
-        value={selection}
-        onChange={handleSelection}
-      />
-      <Dropdown
-        options={options}
-        value={selection}
-        onChange={handleSelection}
-      />
-      <Dropdown
-        options={options}
-        value={selection}
-        onChange={handleSelection}
-      />
+      <Dropdown options={options} value={selection} onChange={handleSelect} />
     </div>
   );
 }
